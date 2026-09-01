@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    background: #050b12;
+
+    color: white;
+
+    font-family:
+        Arial,
+        sans-serif;
+
+    min-height: 100vh;
+
+}
+
+.app {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    padding: 30px 15px;
+
+}
+
+h1 {
+
+    letter-spacing: 10px;
+
+    font-size: 40px;
+
+    color: #00d9ff;
+
+    margin-top: 20px;
+
+}
+
+.status {
+
+    margin-top: 10px;
+
+    color: #00d9ff;
+
+    font-size: 12px;
+
+    letter-spacing: 3px;
+
+}
+
+
+/* CERCLE KAEL */
+
+.circle {
+
+    width: 180px;
+
+    height: 180px;
+
+    border-radius: 50%;
+
+    border: 3px solid #00d9ff;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    margin: 50px;
+
+    color: #00d9ff;
+
+    font-size: 25px;
+
+    letter-spacing: 5px;
+
+    box-shadow:
+
+        0 0 20px #00d9ff,
+
+        inset 0 0 20px #00d9ff;
+
+    animation:
+        pulse 2s infinite;
+
+}
+
+
+@keyframes pulse {
+
+    0% {
+
+        transform: scale(1);
+
+    }
+
+    50% {
+
+        transform: scale(1.05);
+
+    }
+
+    100% {
+
+        transform: scale(1);
+
+    }
+
+}
+
+
+/* CHAT */
+
+#chat {
+
+    width: 100%;
+
+    max-width: 600px;
+
+    min-height: 150px;
+
+    background:
+
+        rgba(
+            0,
+            217,
+            255,
+            0.05
+        );
+
+    border:
+
+        1px solid #00d9ff;
+
+    border-radius: 15px;
+
+    padding: 20px;
+
+}
+
+
+/* CONTROLES */
+
+.controls {
+
+    width: 100%;
+
+    max-width: 600px;
+
+    display: flex;
+
+    gap: 10px;
+
+    margin-top: 20px;
+
+}
+
+
+input {
+
+    flex: 1;
+
+    background: #0a1620;
+
+    border: 1px solid #00d9ff;
+
+    border-radius: 10px;
+
+    padding: 15px;
+
+    color: white;
+
+}
+
+
+button {
+
+    background: #00d9ff;
+
+    color: black;
+
+    border: none;
+
+    border-radius: 10px;
+
+    padding: 15px;
+
+    font-weight: bold;
+
+}
